@@ -8,9 +8,6 @@ tasks.getList();
 
 <template>
   <div>
-    <pre>
-      {{ tasks.list }}
-    </pre>
     <div :key="task.id" v-for="task of tasks.list" class="task">
       <span> id: {{ task.id }} </span>
       <input type="checkbox" :value="task.checked" @change="task.update({checked: !task.checked})" />
