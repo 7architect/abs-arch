@@ -4,8 +4,6 @@ import {useTasks} from "../entities/task/task-model.ts";
 const tasks = useTasks();
 tasks.getList();
 
-const a = (v) => alert(v)
-
 </script>
 
 <template>
